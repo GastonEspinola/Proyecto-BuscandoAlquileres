@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba de publicacion de alquileres</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+
+    <div class="form-container">
+        <h2>Publicando El Alquiler</h2>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="descripcion">Descripcion</label>
+            <textarea id="descripcion" name="description" rows="4" required></textarea>
+            
+            <label for="image">Subir Imagen</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
+
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
