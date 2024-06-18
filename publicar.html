@@ -7,16 +7,40 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
+<!--NavBar-->
+<header class="header">
+    <div class="logo">
+        <img src="./assets/img/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Alquilar</a></li>
+            <li><a href="#">Publicar</a></li>
+        </ul>
+    </nav>
+    <div class="btn-sesion">
+    <a href="/assets/html/login.html" class="btn" target="_blank"><button>Iniciar sesión</button></a>
+    <a href="#" class="btn" id="openModalBtn"><button>Registrarse</button></a>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Selecciona una opción:</h2>
+        <button id="locatarioBtn">Locatario</button>
+        <button id="locadorBtn">Locador</button>
+        <button id="inmobiliariaBtn">Inmobiliaria</button>
+        </div>
+    </div>
 
     <div class="form-container">
         <h2>Publicando El Alquiler</h2>
-        <form action="/submit" method="post" enctype="multipart/form-data">
+        <form  method="post" enctype="multipart/form-data">
             <label for="descripcion">Descripcion</label>
             <textarea id="descripcion" name="description" rows="4" required></textarea>
             
             <label for="image">Subir Imagen</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
+            <input type="file" id="image" name="image"  required>
             
             <button type="submit">Publicar</button>
         </form>
